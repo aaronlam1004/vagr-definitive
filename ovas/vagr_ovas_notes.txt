@@ -1,0 +1,27 @@
+For all Ubuntu distros:
+	sudo apt-get update
+	
+	sudo apt-get install build-essential linux-headers-$(uname -r)
+	sudo apt-get install virtualbox-guest-dkms
+
+	sudo mkdir /media/cdrom
+	(Insert VBoxGuestAdditions disk)
+	sudo mount /dev/cdrom /media/cdrom
+	sudo /media/cdrom/VBoxLinuxAdditions.run
+	(Remove VBoxGuestAdditions disk)
+
+	/etc/default/grub (for 16.04 and below)
+		GRUB_TIMEOUT=1
+		GRUB_RECORDFAIL_TIMEOUT=$GRUB_TIMEOUT
+	sudo update-grub
+
+	sudo passwd -u root
+
+	/etc/ssh/sshd_config
+		PermitRootLogin yes
+
+	sudo touch /etc/cloud/cloud-init.disabled (for 18.04 and above)
+
+	sudo mkdir /home/vagr_home
+	/home/vagr/.bashrc
+		alias vagr_home="cd /home/vagr_home"
