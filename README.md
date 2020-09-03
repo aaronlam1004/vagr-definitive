@@ -23,3 +23,6 @@ Commands:
     destroy
     status
 ```
+## TODO
+1. More network functionality (so far only works for NAT)
+    - Add features to include Bridged Adapter, etc.
