@@ -1,4 +1,4 @@
-# Vagr (Definitive Version)
+# Vagr (Python Version)
 ## What is Vagr?
 It is a pretty badly coded implementation of how the software Vagrant works using **Python**. I made this because my old computer at home ran Vagrant really slowly and it got to the point where it would sometimes freeze my computer. 
 
