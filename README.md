@@ -9,7 +9,30 @@ NOTE: *The version [here](https://github.com/aaronlam1004/vagr) is an older, wor
 - Vagr Compatible OVAs
     -  Can create custom based on [the Vagr OVAs guidelines](https://github.com/aaronlam1004/vagr-definitive/blob/master/ovas/vagr_ovas_notes.txt)
     -  Can be downloaded from [the Vagr OVAs downloads](https://mega.nz/#F!fslWECaS!ff9DvPb9DRk7nIcA85ZNLQ)
-## Using Vagr (but why would you?)
+## Getting Started with Vagr (but why would you?)
+1. **Check out repository** using Github or    
+```git clone https://github.com/aaronlam1004/vagr-py.git```  
+2. **Define enviornment variable** for **```vagr-py```**.
+3. **Download Vagr OVA** at [Vagr OVAs downloads](https://mega.nz/#F!fslWECaS!ff9DvPb9DRk7nIcA85ZNLQ) or **make your own using** [the Vagr OVAs guidelines](https://github.com/aaronlam1004/vagr-definitive/blob/master/ovas/vagr_ovas_notes.txt).
+4. **Add OVA** to **```vagr-py/ovas```**.
+5. **Create a new Vagr machine** using **```init```**  
+**```vagr init ubuntu-bionic vagr```**
+    - You can check what OVAS you have by using **```vagr ovas```**.
+## The Vagr.json file (I can't believe you got this far)
+After initialization, you will have a **```Vagr.json```** in the directory you ran the **```init```** command.  
+That file may look something like this  
+```json
+{
+    "machine": "vagr",
+    "ports": [
+        ["ssh", "tcp", "", "2222", "", "22"]
+    ]
+}
+```
+## Using Vagr (but seriously why would you?)
+In a directory that has a **```Vagr.json```** file.
+- **```vagr up```** starts up .
+
 ## Commands
 ```
 Usage: vagr [command]
@@ -24,5 +47,7 @@ Commands:
     status
 ```
 ## TODO
-1. More network functionality (so far only works for NAT)
+1. Finish basis of this README.md
+2. More network functionality (so far only works for NAT) by editing Vagr.json
     - Specifically, add features to allow users to use Bridged Adapter, etc.
+3. Ability to change name in Vagr.json
