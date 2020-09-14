@@ -182,7 +182,8 @@ def runCommand(cmd):
 	elif cmd == "ovas":
 		ovasDirectory = os.path.join(filepath, "ovas")
 		for file in os.listdir(ovasDirectory):
-			print(file[0:-4])
+			if file[0:-4] == ".ova":
+				print(file[0:-4])
 	else:
 		eMessage = "Could not run command: vagr [" + cmd + "]\n"
 		if cmd in ["down", "reload", "ssh"]:
