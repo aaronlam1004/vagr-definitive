@@ -61,4 +61,4 @@ Commands:
 1. Finish basis of this README.md
 2. More network functionality (so far only works for NAT) by editing Vagr.json
     - Specifically, add features to allow users to use Bridged Adapter, etc.
-3. Ability to change name in Vagr.json
+3. Ability to change name using Vagr.json
