@@ -26,12 +26,21 @@ That file may look something like this
     "machine": "vagr",
     "ports": [
         ["ssh", "tcp", "", "2222", "", "22"]
+    ],
+    "shared": [
+        ["vagr", "YOUR DIRECTORY", "/home/vagr_home"]
     ]
 }
 ```
 ## Using Vagr (but seriously why would you?)
 In a directory that has a **```Vagr.json```** file.
-- **```vagr up```** starts up .
+- **```vagr ovas```** shows all OVA files you have in your **```vagr-py/ovas```** directory.
+- **```vagr up```** starts up Vagr machine.
+- **```vagr down```** shuts down Vagr machine.
+- **```vagr reload```** restarts your Vagr machine.
+- **```vagr rename```** renames the Vagr machine to whatever **```vmname```** you give it.
+- **```vagr destroys```** deletes the Vagr machine.
+- **```vagr status```** gives you the status of your Vagr machine (if it's running, the forwarded NAT ports, the shared folders).
 
 ## Commands
 ```
