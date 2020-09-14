@@ -25,4 +25,4 @@ Commands:
 ```
 ## TODO
 1. More network functionality (so far only works for NAT)
-    - Add features to include Bridged Adapter, etc.
+    - Specifically, add features to allow users to use Bridged Adapter, etc.
