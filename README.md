@@ -1,6 +1,6 @@
 # Vagr (Python Version)
 ## What is Vagr?
-It is a pretty badly coded implementation Virtual Machine management software for VirtualBox made in **Python**. I made this because my old computer at home ran Vagrant really slowly and it got to the point where it would sometimes freeze my computer. 
+It is a pretty poorly coded Virtual Machine management software for VirtualBox (loosely based on Vagrant) made in **Python**. I made this because my old computer at home ran Vagrant really slowly and it got to the point where it would sometimes freeze my computer. 
 - Written in Python 3.7.2
 - Compiled with PyInstaller
 - Based on [Vagrant](https://www.vagrantup.com/)
