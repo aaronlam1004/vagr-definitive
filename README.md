@@ -1,13 +1,14 @@
 # Vagr (Python Version)
 ## What is Vagr?
-It is a pretty badly coded implementation Virtual Machine management software mainly for VirtualBox (kind of based on Vagrant) made in **Python**. I made this because my old computer at home ran Vagrant really slowly and it got to the point where it would sometimes freeze my computer. 
+It is a pretty badly coded implementation Virtual Machine management software for VirtualBox made in **Python**. I made this because my old computer at home ran Vagrant really slowly and it got to the point where it would sometimes freeze my computer. 
 - Written in Python 3.7.2
 - Compiled with PyInstaller
+- Based on [Vagrant] (https://www.vagrantup.com/)
 
 NOTE: *The version [here](https://github.com/aaronlam1004/vagr) is an older, worse version.*  
 
 ## Requirements
-- VirtualBox
+- [VirtualBox] (https://www.virtualbox.org/)
 - Vagr Compatible OVAs
     -  Can create custom based on [the Vagr OVAs guidelines](https://github.com/aaronlam1004/vagr-definitive/blob/master/ovas/vagr_ovas_notes.txt)
     -  Can be downloaded from [the Vagr OVAs downloads](https://mega.nz/#F!fslWECaS!ff9DvPb9DRk7nIcA85ZNLQ)
