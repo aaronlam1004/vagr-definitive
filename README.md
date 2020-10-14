@@ -41,8 +41,8 @@ You can add a port by writing it into the ports option of the **Vagr.json** file
     "machine": "vagr",
     "ports": [
         ["ssh", "tcp", "", "2222", "", "22"],
-        ["jupyter", "tcp", "8888", "", "8888"],
-        ["website", "tcp", "8080", "", "8080]
+        ["jupyter", "tcp", "", "8888", "", "8888"],
+        ["website", "tcp", "", "8080", "", "8080]
     ],
     "shared": [
         ["vagr", "YOUR DIRECTORY", "/home/vagr_home"]
@@ -58,7 +58,7 @@ You can add shared folders by writing them in the shared option of the **Vagr.js
     ],
     "shared": [
         ["vagr", "YOUR DIRECTORY", "/home/vagr_home"],
-        ["school", "C:\Users\USER\Desktop\Classwork for School\", "/home/uci"]
+        ["school", "C:\\Users\\USER\\Desktop\\Classwork for School", "/home/uci"]
     ]
 }
 ```
