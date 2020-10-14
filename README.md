@@ -35,21 +35,21 @@ That file may look something like this
     ]
 }
 ```
-You can add a port by writing it into the ports option of the **Vagr.json** file. This would something like this
+You can add a port by writing it into the ports option of the **```Vagr.json```** file. This would something like this
 ```json
 {
     "machine": "vagr",
     "ports": [
         ["ssh", "tcp", "", "2222", "", "22"],
         ["jupyter", "tcp", "", "8888", "", "8888"],
-        ["website", "tcp", "", "8080", "", "8080]
+        ["website", "tcp", "", "8080", "", 8080],
     ],
     "shared": [
         ["vagr", "YOUR DIRECTORY", "/home/vagr_home"]
     ]
 }
 ```
-You can add shared folders by writing them in the shared option of the **Vagr.json** file. This would look something like this
+You can add shared folders by writing them in the shared option of the **```Vagr.json```** file. This would look something like this
 ```json
 {
     "machine": "vagr",
