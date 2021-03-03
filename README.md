@@ -42,7 +42,7 @@ You can add a port by writing it into the ports option of the **```Vagr.json```*
     "ports": [
         ["ssh", "tcp", "", "2222", "", "22"],
         ["jupyter", "tcp", "", "8888", "", "8888"],
-        ["website", "tcp", "", "8080", "", 8080],
+        ["website", "tcp", "", "8080", "", "8080"],
     ],
     "shared": [
         ["vagr", "YOUR DIRECTORY", "/home/vagr_home"]
